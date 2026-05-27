@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub03</title>
+    <link href="master.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
+</head>
+
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Work</a>
+        </nav>
+    </div>
+</header>
+
+<div class="wrap">
+
+    <picture>
+  <source srcset="img/detail.webp" type="image/webp">
+  <img src="img/im03.png" alt="">
+</picture>
+
+    <!-- 상단 타이틀 -->
+    <section class="sub-hero">
+        <div class="inner">
+            <h1>신탁자·저작물 온라인 접수 및 정산 관리 포털 리뉴얼 (Web · App)</h1>
+            <p class="sub-title">Project 03</p>
+        </div>
+    </section>
+
+    <!-- 상세 이미지 -->
+    <section class="sub-content">
+        <div class="inner">
+            <img src="img/pu03.png" alt="project detail">
+        </div>
+    </section>
+
+    <!-- 다음 프로젝트 영역 -->
+    <section class="sub-next">
+        <div class="next-inner">
+
+            <h2 class="next-title">the next project</h2>
+
+            <div class="next-grid">
+
+                <a href="sub01.html" class="next-card">
+                    <div class="thumb">
+                        <img src="img/im01.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="card-title">경영 시스템 리뉴얼 WeB</p>
+                        <span class="card-year">2026</span>
+                    </div>
+                </a>
+
+                <a href="sub02.html" class="next-card">
+                    <div class="thumb">
+                        <img src="img/im02.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="card-title">출장 기반 업소 관리 APP (KOS-G)</p>
+                        <span class="card-year">2026</span>
+                    </div>
+                </a>
+
+                <a href="sub04.html" class="next-card">
+                    <div class="thumb">
+                        <img src="img/im04.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="card-title">신탁저작물 온라인 접수 및 정산 관리 포털</p>
+                        <span class="card-year">2026</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+<!-- 스크롤 플로팅 버튼 -->
+<button class="scroll-top">↑</button>
+
+<script>
+const scrollBtn = document.querySelector(".scroll-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollBtn.style.opacity = "1";
+        scrollBtn.style.pointerEvents = "auto";
+    } else {
+        scrollBtn.style.opacity = "0";
+        scrollBtn.style.pointerEvents = "none";
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
+</body>
+
+
+</html>
